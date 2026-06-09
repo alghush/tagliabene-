@@ -31,6 +31,10 @@ body {
 
 /*--- SPLASH / INDEX ---*/
 
+.content-wrapper{
+    margin-top: 25px;
+}
+
 .splash {
     min-height: 100vh;
     display: flex;
@@ -39,6 +43,12 @@ body {
     justify-content: center;
     padding: 2rem 1rem;
     font-family: 'Montserrat', sans-serif;
+}
+.scroll-arrow {
+    font-size: 3rem;
+    color: #fefefe;
+    animation: bounce 2s infinite;
+    margin-top: 1rem;
 }
 
 .splash__logo {
@@ -68,9 +78,11 @@ body {
 }
 
 .splash__sub {
-    font-size: 0.7rem;
-    color: var(--text-secundary);
-    letter-spacing: 3px;
+    font-size: 1rem;
+    color:#fff;
+    filter: drop-shadow(0px 0px 20px var(--color-hover));
+    text-align: center;
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 2.5rem;
 }
@@ -102,7 +114,7 @@ body {
 
 .splash__btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 25px #00000066;
 }
 
 .splash__btn-icon {
@@ -130,14 +142,14 @@ body {
 .splash__btn--menu {
     background: var(--color-traslucer);
     color: #fff;
-    border: 1.5px solid rgba(200,162,77,0.4);
+    border: 1.5px solid #c8a24d66;
     justify-content: space-between;
 }
 
 .splash__btn--menu:hover {
     background: var(--color-principal);
     color: #c8a24d;
-    border: 1.5px solid rgba(200,162,77,0.7);
+    border: 1.5px solid #c8a24db3;
 }
 
 .splash__btn-left {
