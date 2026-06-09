@@ -10,7 +10,7 @@ body,main,div,ul,li,a,h1,h2,h3,h4,p {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url(../img/fondo.png);
+    background-image: url(../img/fondonuevo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,6 +27,7 @@ body {
     --color-hover:#f00; 
     --shadow-color:#5d5d5dc8;
     --text-secundary:#ba8901;
+    --color-secundary: #c8a24d;
 }
 
 /*--- SPLASH / INDEX ---*/
@@ -271,7 +272,7 @@ body {
     animation: header-movement both;
     animation-timeline:scroll();
     animation-range:10px 80px ;
-    z-index: 10;
+    z-index: 200;
     font-size: 0.9rem;
     border-radius: 0 0 30px 30px;
 }
@@ -762,148 +763,188 @@ h1 {
     }
 }
 
-/*------- MAIN CARDS ------------ */
+/*--- SUBMENU CATEGORIAS CARRUSEL ---*/
 
-.menu {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    padding: 40px 30px; 
-    gap: 3rem;
-}
-
-.card__title  {
-    justify-content: center;
+.categorias-wrapper {
+    position:sticky;
+    left: 0;
+    top: 140px;
+    bottom: auto;
+    transform: none;
+    width: 100%;
+    max-width: 700px;
+    margin: 90px auto 20px;
+    z-index:100;
+    background: var(--color-traslucer);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0cqb 20px var(--color-secundary);
+    border-radius: 16px;
     padding: 10px;
-    width: 300px;
-    background-color: #4f0f0f;
-    border-radius: 10px;
-    filter: drop-shadow(0px 0px 3px #f009);
 }
 
-h3 {
-    color: #fff;
+.categorias-carrusel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; 
+}
+
+
+.caterorias-carrusel::-webkit-scrollbar {
+    display: none; 
+}
+
+.categoria-card {
+    flex:0 0 auto;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--text-color);
+    background: var(--color-traslucer);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: all 0.25s ease;
+    min-width: 80px;
+}
+
+.categoria-card i {
+    font-size: 20px;
+    color: var(--color-secundary);
+}
+
+.categoria-card span {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.categoria-card:hover, .categoria-card:active {
+    background: #c8a24d;
+    border-color: var(--color-secundary);
+    color: #000;
+}
+
+.categoria-card.active i, .categoria-card:hover i {
+    color: #000;
+}
+
+
+/*---- MENU SECCIONES ----*/
+.menu-section {
+    padding: 100px 20px 120px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    color: var(--color-primary);
+    margin-bottom: 8px;
     text-align: center;
 }
 
-
-.main__card {
-    max-width: 1200px;  
-    margin: 3rem auto;      
-    padding: 0 20px;     
+.section-nota {
+    font-size: 0.75rem;
+    color: var(--color-gold-light);
+    text-align: center;
+    margin-bottom: 30px;
+    opacity: 0.8;
 }
 
-.menu::-webkit-scrollbar {
-    display: none;
+
+/*--- LISTA PRODUCTOS ---*/
+
+.section-marca {
+    text-align: center;
+    font-size: 1.2rem;
+    color:#c8a24d;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 20px;
 }
 
-.menu__item {
-    position: relative;   
-    background: radial-gradient(circle at center, #180101a2 20%, #2503037c 40%, rgba(46, 1, 1, 0.696) 100%, transparent 100%);
-    box-shadow: 0 0 40px var(--color-traslucer);
-    border-radius: 25px;
-    padding: 20px 20px 20px 90px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    transition: 0.3s ease;
-    width: 325px;
-}
-
-.menu__item:hover {
-    transform: translateY(-5px);
-}
-
-.menu__img {
-    position: absolute;
-    left: -30px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+.lista-wrapper {
+    background: var(--color-traslucer);
+    border: 1px solid rgba(200,162,77,0.2);
+    border-radius: 16px;
     overflow: hidden;
-    border: 4px solid #fff;
 }
 
-.menu__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-.menu__content {
-    width: 100%;
-}
-
-.menu__top {
+.producto {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    gap: 12px;
 }
 
-.menu__top h4 {
-    font-size: 1.1rem;
+.producto:last-child {
+    border-bottom: none;
 }
 
-.menu__precio {
-    font-weight: bold;
-    padding: 1rem;
+.producto__nombre {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #fff;
+    flex: 1;
+}
+
+.producto__precios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.precio-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.precio-cantidad {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    letter-spacing: 0.5px;
+}
+
+.precio-valor {
+    font-size: 0.85rem;
+    font-weight: 700;
     color: #c8a24d;
 }
 
-.menu__content p {
-    font-size: 0.85rem;
-    margin: 8px 0;
-    color: #ccc;
-}
-
-.menu__action a {
-    display: inline-block;
-    font-size: 0.8rem;
-    color: #fff;
-    text-decoration: none;
-    background: var(--color-principal);
-    padding: 6px 12px;
-    border-radius: 15px;
-    transition: 0.3s;
-}
-
-.box__button {
-    display: flex;
-    gap: 1rem;
-}
-
-.img__marca {
-    width:3rem;
-    height: 2rem;
-    border-radius:50%;
-}
-
-.menu__action a:hover {
-    background: #7a0d0d;
-}
-
-/*--- DESVANECESTE CARRUCEL ---*/
-
-.menu__carousel {
-    position: relative;
-}
-
-.menu__carousel::before,
-.menu__carousel::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 60px;
-    height: 100%;
-    pointer-events: none;
-    z-index: 2;
-}
-
-.menu__carousel::after {
-    right: 0;
+.categorias-wrapper {
+    transition: opacity 0.3s ease;
 }
 
 
+@media (max-width: 700px) {
+
+    .categorias-wrapper {
+        width: 95%;
+        top: 150px;
+        padding: 8px;
+    }
+
+    .menu-section {
+        padding: 60px 15px 80px;
+    }
+
+    .lista-wrapper {
+        margin: 0 5px;
+    }
+
+    
+}

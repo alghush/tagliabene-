@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logota.png" >
-    <title>TAGLIABENE · Pastas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <title>TAGLIABENE</title>
 </head>
 <body>
     <header class="header">
@@ -93,315 +92,475 @@
         </nav>
     </header>
 
-    <main class="main__card">
 
-        <!-- NUESTRAS PASTAS -->
-        <h3 class="card__title" id="nuestras__pastas">NUESTRAS PASTAS</h3>
-        <div class="menu__carousel">
-        <section class="menu">
+<!-- CARRUSEL DE CATEGORÍAS -->
+<div class="categorias-wrapper">
+    <div class="categorias-carrusel">
+        <a href="#principales" class="categoria-card">
+            <i class="ti ti-bowl-spoon"></i>
+            <span>NUESTRAS PASTAS</span>
+        </a>
+        <a href="#hamburguesas" class="categoria-card">
+            <i class="ti ti-circle-dot"></i>
+            <span>SORRENTINOS</span>
+        </a>
+        <a href="#pizzas" class="categoria-card">
+            <i class="ti ti-square-rotated-filled"></i>
+            <span>RAVIOLES</span>
+        </a>
+        <a href="#milanesas" class="categoria-card">
+            <i class="ti ti-wave-sine"></i>
+            <span>TALLARINES</span>
+        </a>
+        <a href="#picadas" class="categoria-card">
+            <i class="ti ti-dots-circle-horizontal"></i>
+            <span>OTRAS PASTAS</span>
+        </a>
 
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/LASAÑA.JPG" alt="Lasaña"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Lasaña</h4>
-                        <span class="menu__precio">Consultar Precio</span>
-                    </div>
-                    <p>Pasta fresca, jamón, queso y salsa casera.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Lasa%C3%B1a">Consultar</a>
-                    </div>
+        <a href="#celiaco" class="categoria-card">
+            <i class="ti ti-ban"></i>
+            <span>CELÍACO</span>
+        </a>
+
+    </div>
+</div>
+
+<!-- NUESTRAS PASTAS -->
+<section id="nuestras-pastas" class="menu-section">
+    <h2 class="section-title">NUESTRAS PASTAS</h2>
+
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Canelones Ricota y Verdura</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x6</span>
+                    <span class="precio-valor">$0.000</span>
                 </div>
             </div>
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/canelones.png" alt="Canelones"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Canelones</h4>
-                        <span class="menu__precio">Consultar Precio</span>
-                    </div>
-                    <p>Carne picada, acelga y una deliciosa salsa de tomate</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Canelones">Consultar</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/RAVIOLES.png" alt="Ravioles"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Ravioles</h4>
-                        <span class="menu__precio">Consultar Precio</span>
-                    </div>
-                    <p>Carne y verdura, ricota y verdura, cuatro quesos</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Ravioles">Consultar</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/JAMON Y QUESO.png" alt="Sorrentino Jamón y Queso"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Sorrentino Jamón &amp; Queso</h4>
-                        <span class="menu__precio">$12.500</span>
-                    </div>
-                    <p>Pasta fresca, jamón, queso y salsa casera.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Sorrentino%20Jam%C3%B3n%20y%20Queso">Consultar</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/CALABAZA.png" alt="Sorrentino de Calabaza"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Sorrentino de Calabaza</h4>
-                        <span class="menu__precio">$12.500</span>
-                    </div>
-                    <p>Pasta casera rellena de puré de calabaza 250gr</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Sorrentino%20de%20Calabaza">Consultar</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/CUATRO QUESOS.png" alt="Sorrentino Cuatro Quesos"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Sorrentino Cuatro Quesos</h4>
-                        <span class="menu__precio">$12.500</span>
-                    </div>
-                    <p>Pasta fresca rellena de cuatro quesos seleccionados.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Sorrentino%20Cuatro%20Quesos">Consultar</a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
         </div>
 
-        <!-- SORRENTINOS -->
-        <h3 class="card__title" id="sorrentinos">SORRENTINOS</h3>
-        <div class="menu__carousel">
-        <section class="menu">
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/JAMON Y QUESO.png" alt="Sorrentino Jamón y Queso"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Sorrentino Jamón &amp; Queso</h4>
-                        <span class="menu__precio">$12.500</span>
-                    </div>
-                    <p>Pasta fresca, jamón, queso y salsa casera.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Sorrentino%20Jam%C3%B3n%20y%20Queso">Consultar</a>
-                    </div>
+        <div class="producto">
+            <span class="producto__nombre">Canelones Pollo y Verdura</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x6</span>
+                    <span class="precio-valor">$0.000</span>
                 </div>
             </div>
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/CALABAZA.png" alt="Sorrentino de Calabaza"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Sorrentino de Calabaza</h4>
-                        <span class="menu__precio">$12.500</span>
-                    </div>
-                    <p>Pasta casera rellena de puré de calabaza 250gr</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Sorrentino%20de%20Calabaza">Consultar</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/CUATRO QUESOS.png" alt="Sorrentino Cuatro Quesos"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Sorrentino Cuatro Quesos</h4>
-                        <span class="menu__precio">$12.500</span>
-                    </div>
-                    <p>Pasta fresca rellena de cuatro quesos seleccionados.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Sorrentino%20Cuatro%20Quesos">Consultar</a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
         </div>
 
-        <!-- RAVIOLES -->
-        <h3 class="card__title" id="ravioles">RAVIOLES</h3>
-        <div class="menu__carousel">
-        <section class="menu">
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/RAVIOLES.png" alt="Ravioles Carne y Verdura"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Ravioles Carne y Verdura</h4>
-                        <span class="menu__precio">Consultar Precio</span>
-                    </div>
-                    <p>Ravioles rellenos de carne y verdura, receta casera.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Ravioles%20Carne%20y%20Verdura">Consultar</a>
-                    </div>
+        <div class="producto">
+            <span class="producto__nombre">Canelones Carne y Verdura</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x6</span>
+                    <span class="precio-valor">$0.000</span>
                 </div>
             </div>
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/RAVIOLES.png" alt="Ravioles Ricota y Verdura"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Ravioles Ricota y Verdura</h4>
-                        <span class="menu__precio">Consultar Precio</span>
-                    </div>
-                    <p>Ravioles rellenos de ricota fresca y verdura de estación.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Ravioles%20Ricota%20y%20Verdura">Consultar</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/CUATRO QUESOS.png" alt="Ravioles Cuatro Quesos"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Ravioles Cuatro Quesos</h4>
-                        <span class="menu__precio">Consultar Precio</span>
-                    </div>
-                    <p>Ravioles rellenos de cuatro quesos seleccionados.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Ravioles%20Cuatro%20Quesos">Consultar</a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
         </div>
 
-        <!-- TALLARINES -->
-        <h3 class="card__title" id="tallarines">TALLARINES &amp; FIDEOS</h3>
-        <div class="menu__carousel">
-        <section class="menu">
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/LASAÑA.JPG" alt="Tallarines"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Tallarines</h4>
-                        <span class="menu__precio">Consultar Precio</span>
-                    </div>
-                    <p>Tallarines frescos de elaboración artesanal.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Tallarines">Consultar</a>
-                    </div>
+        <div class="producto">
+            <span class="producto__nombre">Lasaña Carne, Verdura, Jamón y Queso</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor">$0.000</span>
                 </div>
             </div>
-
-        </section>
         </div>
 
-        <!-- OTRAS PASTAS -->
-        <h3 class="card__title" id="otras__pastas">OTRAS PASTAS</h3>
-        <div class="menu__carousel">
-        <section class="menu">
+    </div>
+</section>
 
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/LASAÑA.JPG" alt="Lasaña"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Lasaña</h4>
-                        <span class="menu__precio">Consultar Precio</span>
-                    </div>
-                    <p>Pasta fresca, jamón, queso y salsa casera.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Lasa%C3%B1a">Consultar</a>
-                    </div>
+
+<!-- SORRENTINOS -->
+<section id="sorrentinos" class="menu-section">
+    <h2 class="section-title">SORRENTINOS</h2>
+    <p class="section-marca">Althar</p>
+
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Sorrentino de Calabaza</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">200g</span>
+                    <span class="precio-valor">$7.000</span>
                 </div>
             </div>
+        </div>
 
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/canelones.png" alt="Canelones"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Canelones</h4>
-                        <span class="menu__precio">Consultar Precio</span>
-                    </div>
-                    <p>Carne picada, acelga y una deliciosa salsa de tomate.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Canelones">Consultar</a>
-                    </div>
+        <div class="producto">
+            <span class="producto__nombre">Sorrentino Jamón y Queso</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">200g</span>
+                    <span class="precio-valor">$7.000</span>
                 </div>
             </div>
-
-        </section>
         </div>
 
-    </main>
-
-    <section class="productos" id="productos">
-        <h2 class="productos__title">PRODUCTOS TAGLIABENE</h2>
-        <div class="productos__promos-container">
-
-            <div class="productos__promos video-card">
-                <video autoplay muted loop playsinline class="promo-video">
-                    <source src="/video/salsa.mp4" type="video/mp4">
-                </video>
-                <a href="/page/congelados.html"></a>
+        <div class="producto">
+            <span class="producto__nombre">Sorrentino de Cordero</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">200g</span>
+                    <span class="precio-valor">$7.000</span>
+                </div>
             </div>
-
-            <div class="productos__promos video-card">
-                <video autoplay muted loop playsinline class="promo-video">
-                    <source src="/video/rebozados.mp4" type="video/mp4">
-                </video>
-                <a href="/page/congelados.html"></a>
-            </div>
-
-            <div class="productos__promos video-card">
-                <video autoplay muted loop playsinline class="promo-video">
-                    <source src="/video/tartasymepanadas.mp4" type="video/mp4">
-                </video>
-                <a href="/page/congelados.html"></a>
-            </div>
-
-            <div class="productos__promos video-card">
-                <video autoplay muted loop playsinline class="promo-video">
-                    <source src="/video/ravioles.mp4" type="video/mp4">
-                </video>
-                <a href="/page/pastas.html#ravioles"></a>
-            </div>
-
-            <div class="productos__promos video-card">
-                <video autoplay muted loop playsinline class="promo-video">
-                    <source src="/video/canelones.mp4" type="video/mp4">
-                </video>
-                <a href="/page/pastas.html#otras__pastas"></a>
-            </div>
-
-            <div class="productos__promos video-card">
-                <video autoplay muted loop playsinline class="promo-video">
-                    <source src="/video/sorrentinos.mp4" type="video/mp4">
-                </video>
-                <a href="/page/pastas.html#sorrentinos"></a>
-            </div>
-
-            <div class="productos__promos video-card">
-                <video autoplay muted loop playsinline class="promo-video">
-                    <source src="/video/PIZZAS.mp4" type="video/mp4">
-                </video>
-                <a href="/page/congelados.html"></a>
-            </div>
-
         </div>
-    </section>
+    </div>
+
+        <p class="section-marca">DON CARLOS</p>
+
+        <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Sorrentino Jamón y Queso</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Sorrentino Puerro y Verdeo</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Sorrentino Ricota, Verdura y Nuez</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Sorrentino Capresse</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Sorrentino de Calabaza</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- RAVIOLES -->
+
+<section id="ravioles" class="menu-section">
+    <h2 class="section-title">RAVIOLES</h2>
+    <p class="section-marca">ALTHAR</p>
+
+        <div class="lista-wrapper">
+            <div class="producto">
+            <span class="producto__nombre">Ravioles Carne y Verdura</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">200gr</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+            </div>
+            <div class="producto">
+            <span class="producto__nombre">Ravioles carne desm </span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">200gr</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+            </div>
+    </div>
+        <p class="section-marca">DON CARLOS</p>
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Ravioles Queso y Verdura</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Ravioles de Bondiola</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Ravioles Carne y Verdura</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- TALLARINES & FIDEOS -->
+<section id="tallarines" class="menu-section">
+    <h2 class="section-title">TALLARINES & FIDEOS</h2>
+    <p class="section-marca">Althar</p>
+
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Spaghetti</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Tagliatelle</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="section-marca">Don Carlos</p>
+
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Fideos Yemita</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Fideos Anchos</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Fideos de Albahaca</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- OTRAS PASTAS -->
+<section id="otras-pastas" class="menu-section">
+    <h2 class="section-title">OTRAS PASTAS</h2>
+    <p class="section-marca">Althar</p>
+
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Ñoquis de Papa</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Ñoquis de Espinaca</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="section-marca">Don Carlos</p>
+
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Ñoquis de Calabaza</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CELÍACO -->
+<section id="celiaco" class="menu-section">
+    <h2 class="section-title">CELÍACO</h2>
+
+</section>
+
+  <section class="productos" id="productos">
+    <h2 class="productos__title">PRODUCTOS TAGLIABENE</h2>
+
+    <div class="productos__promos-container">
+
+        <div class="productos__promos video-card">
+            <video autoplay muted loop playsinline class="promo-video">
+                <source src="../video/rebozados.mp4" type="video/mp4">
+            </video>
+
+            <a href="./pages/congelados.html">
+            </a>
+        </div>
+
+        <div class="productos__promos video-card">
+            <video autoplay muted loop playsinline class="promo-video">
+                <source src="../video/ravioles.mp4" type="video/mp4">
+            </video>
+
+            <a href="./pages/congelados.html">
+            </a>
+        </div>
+
+        <div class="productos__promos video-card">
+            <video autoplay muted loop playsinline class="promo-video">
+                <source src="../video/canelones.mp4" type="video/mp4">
+            </video>
+
+            <a href="./pages/congelados.html">
+            </a>
+        </div>
+
+        <div class="productos__promos video-card">
+            <video autoplay muted loop playsinline class="promo-video">
+                <source src="../video/sorrentinos.mp4" type="video/mp4">
+            </video>
+
+            <a href="./pages/congelados.html">
+            </a>
+        </div>
+
+        <div class="productos__promos video-card">
+            <video autoplay muted loop playsinline class="promo-video">
+                <source src="../video/PIZZAS.mp4" type="video/mp4">
+            </video>
+
+            <a href="./pages/congelados.html">
+            </a>
+        </div>
+
+    </div>
+</section>
 
     <footer class="footer">
         <div class="footer__container">
@@ -433,5 +592,6 @@
             © 2026 Tagliabene. Todos los derechos reservados.
         </div>
     </footer>
+<script src="/js/scripts.js"></script>
 </body>
 </html>

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logota.png" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <title>TAGLIABENE · Congelados</title>
 </head>
 <body>
@@ -89,161 +90,558 @@
         </nav>
     </header>
 
-    <main class="main__card">
+    <!-- CARRUSEL DE CATEGORÍAS -->
+<div class="categorias-wrapper">
+    <div class="categorias-carrusel">
+        <a href="#salsas" class="categoria-card">
+            <i class="ti ti-soup"></i>
+            <span>SALSAS</span>
+        </a>
+        <a href="#rebozados" class="categoria-card">
+            <i class="ti ti-tools-kitchen-2"></i>
+            <span>REBOZADOS</span>
+        </a>
+        <a href="#pescaderia" class="categoria-card">
+            <i class="ti ti-fish"></i>
+            <span>PESCADERÍA</span>
+        </a>
+        <a href="#empanadas" class="categoria-card">
+            <i class="ti ti-bread"></i>
+            <span>EMPANADAS & TARTAS</span>
+        </a>
+        <a href="#hamburguesas" class="categoria-card">
+            <i class="ti ti-meat"></i>
+            <span>HAMBURGUESAS</span>
+        </a>
+        <a href="#otros" class="categoria-card">
+            <i class="ti ti-dots-circle-horizontal"></i>
+            <span>OTROS</span>
+        </a>
+    </div>
+</div>
 
-        <!-- NUESTROS PRODUCTOS -->
-        <h3 class="card__title" id="nuestros__productos">NUESTROS PRODUCTOS</h3>
-        <div class="menu__carousel">
-        <section class="menu">
+<!-- SALSAS -->
+<section id="salsas" class="menu-section">
+    <h2 class="section-title">SALSAS</h2>
+    <p class="section-marca">Tagliabene</p>
 
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/LASAÑA.JPG" alt="Lasaña"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Lasaña</h4>
-                        <span class="menu__precio">Consultar Precio</span>
-                    </div>
-                    <p>Pasta fresca, jamón, queso y salsa casera.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Lasa%C3%B1a">Consultar</a>
-                    </div>
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Fileto</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">250g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
                 </div>
             </div>
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/canelones.png" alt="Canelones"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Canelones</h4>
-                        <span class="menu__precio">Consultar Precio</span>
-                    </div>
-                    <p>Carne picada, acelga y una deliciosa salsa de tomate</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Canelones">Consultar</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/RAVIOLES.png" alt="Ravioles"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Ravioles</h4>
-                        <span class="menu__precio">Consultar Precio</span>
-                    </div>
-                    <p>Carne y verdura, ricota y verdura, cuatro quesos</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Ravioles">Consultar</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/JAMON Y QUESO.png" alt="Sorrentino Jamón y Queso"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Sorrentino Jamón &amp; Queso</h4>
-                        <span class="menu__precio">$12.500</span>
-                    </div>
-                    <p>Pasta fresca, jamón, queso y salsa casera.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Sorrentino%20Jam%C3%B3n%20y%20Queso">Consultar</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/CALABAZA.png" alt="Sorrentino de Calabaza"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Sorrentino de Calabaza</h4>
-                        <span class="menu__precio">$12.500</span>
-                    </div>
-                    <p>Pasta casera rellena de puré de calabaza 250gr</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Sorrentino%20de%20Calabaza">Consultar</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/CUATRO QUESOS.png" alt="Sorrentino Cuatro Quesos"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Sorrentino Cuatro Quesos</h4>
-                        <span class="menu__precio">$12.500</span>
-                    </div>
-                    <p>Pasta fresca rellena de cuatro quesos seleccionados.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Sorrentino%20Cuatro%20Quesos">Consultar</a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
         </div>
 
-        <!-- REBOZADOS -->
-        <h3 class="card__title" id="rebosados">REBOZADOS</h3>
-        <div class="menu__carousel">
-        <section class="menu">
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/BANDEJA DE ROBOSADOS.png" alt="Rebozados"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Rebozados</h4>
-                        <span class="menu__precio">Consultar Precio</span>
-                    </div>
-                    <p>Productos rebozados artesanales, listos para freír o al horno.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Rebozados">Consultar</a>
-                    </div>
+        <div class="producto">
+            <span class="producto__nombre">Bolognesa</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">250g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
                 </div>
             </div>
-        </section>
         </div>
 
-        <!-- PESCADERIA -->
-        <h3 class="card__title" id="pescaderia">PESCADERÍA</h3>
-        <div class="menu__carousel">
-        <section class="menu">
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/LASAÑA.JPG" alt="Pescadería"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Pescadería</h4>
-                        <span class="menu__precio">Consultar Precio</span>
-                    </div>
-                    <p>Productos de pescadería frescos y congelados.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Pescader%C3%ADa">Consultar</a>
-                    </div>
+        <div class="producto">
+            <span class="producto__nombre">Blend de Hongos</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
                 </div>
             </div>
-        </section>
         </div>
 
-        <!-- CARNES -->
-        <h3 class="card__title" id="carnes">CARNES</h3>
-        <div class="menu__carousel">
-        <section class="menu">
-            <div class="menu__item">
-                <div class="menu__img"><img src="/img/LASAÑA.JPG" alt="Carnes"></div>
-                <div class="menu__content">
-                    <div class="menu__top">
-                        <h4>Carnes</h4>
-                        <span class="menu__precio">Consultar Precio</span>
-                    </div>
-                    <p>Carnes seleccionadas y congeladas de calidad.</p>
-                    <div class="menu__action">
-                        <a href="https://api.whatsapp.com/send?phone=5493415509995&text=Hola%20Tagliabene!%20Quiero%20consultar%20sobre%3A%20Carnes">Consultar</a>
-                    </div>
+        <div class="producto">
+            <span class="producto__nombre">Crema</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">200g</span>
+                    <span class="precio-valor">$0.000</span>
                 </div>
             </div>
-        </section>
         </div>
 
-    </main>
+        <div class="producto">
+            <span class="producto__nombre">Manteca</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">100g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- REBOZADOS -->
+<section id="rebozados" class="menu-section">
+    <h2 class="section-title">REBOZADOS</h2>
+
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón de Pollo</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón Pollo y Espinaca</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Nuggets</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Patitas de Pollo Jamón y Queso</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Palitos de Pollo</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Croqueta de Papa Jamón y Queso</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Croqueta de Espinaca</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Croqueta</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Bastón de Muzzarella</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PESCADERÍA -->
+<section id="pescaderia" class="menu-section">
+    <h2 class="section-title">PESCADERÍA</h2>
+
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón de Merluza</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón Merluza, Espinaca y Queso</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Boga Despinada</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Filet Merluza Finas Hierbas</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Filet Merluza Rebozado</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Filet de Merluza</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Filet Trucha Salmonada</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Tubo de Calamar</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Rabas</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Langostinos</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Mejillones</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Mix de Mariscos</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- EMPANADAS & TARTAS -->
+<section id="empanadas" class="menu-section">
+    <h2 class="section-title">EMPANADAS & TARTAS</h2>
+
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Empanadas de Carne Tagliabene</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x6</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Empanadas de Boga Tagliabene</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x6</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Empanadas de Jamón y Queso</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x6</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Empanadas de Trucha</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x6</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Tartitas Blend de Hongos</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x6</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Strudel de Pollo</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Strudel Jamón y Queso</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Strudel de Verdura</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- HAMBURGUESAS -->
+<section id="hamburguesas" class="menu-section">
+    <h2 class="section-title">HAMBURGUESAS</h2>
+
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Hamburguesa Casera Swift</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Hamburguesa Común Swift</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Hamburguesa Vegetariana</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- OTROS -->
+<section id="otros" class="menu-section">
+    <h2 class="section-title">OTROS</h2>
+
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón Natural de Calabaza</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón Natural de Espinaca</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón Natural de Porotos</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón Natural de Garbanzo</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón Natural de Lentejas</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Milanesa de Soja</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Papas 9mm</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Papas Nositte</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Papas Smile</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor">$0.000</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <section class="productos" id="productos">
         <h2 class="productos__title">PRODUCTOS TAGLIABENE</h2>
