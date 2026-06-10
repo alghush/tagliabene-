@@ -192,6 +192,11 @@ body {
     border: 1.5px solid #c8a24d66;
 }
 
+.splash__btn--ins:hover {
+    background: var(--color-principal);
+    color: var(--color-blanco);
+}
+
 .splash__btn--menu {
     background: var(--color-traslucer);
     color: var(--color-blanco);
