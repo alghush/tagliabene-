@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logota.png" >
-    <title>TAGLIABENE</title>
+    <title>Tagliabene</title>
 </head>
 <body>
 
@@ -23,32 +23,31 @@
         <div class="splash__btns">
 
                         <!-- VER PRODUCTOS (acordeón CSS puro) -->
-            <details class="splash__details">
-                <summary class="splash__btn splash__btn--menu">
-                    <span class="splash__btn-left">
-                        <span class="splash__btn-icon"><i class="ti ti-tools-kitchen-2"></i></span>
-                        Ver productos
-                    </span>
-                    <i class="ti ti-chevron-down splash__arrow"></i>
-                </summary>
+            <input type="checkbox" id="toggle-productos" class="checkbox__submenu">
+                <label class="splash__btn splash__btn--menu" for="toggle-productos">
+                <span class="splash__btn-left">
+                <span class="splash__btn-icon"><i class="ti ti-tools-kitchen-2"></i></span>
+                Ver productos
+                </span>
+                <i class="ti ti-chevron-down splash__arrow"></i>
+                </label>
 
-                <div class="splash__acordeon-inner">
-                    <div class="splash__acordeon-wrap">
-                        <a class="splash__acordeon-item" href="/page/pastas.html">
-                            <i class="ti ti-bowl-spoon"></i> Pastas
-                        </a>
-                        <a class="splash__acordeon-item" href="/page/congelados.html">
-                            <i class="ti ti-snowflake"></i> Congelados
-                        </a>
-                        <a class="splash__acordeon-item" href="/page/bebidas.html">
-                            <i class="ti ti-bottle"></i> Bebidas
-                        </a>
-                        <a class="splash__acordeon-item" href="/page/almacen.html">
-                            <i class="ti ti-shopping-cart"></i> Almacén
-                        </a>
-                    </div>
+            <div class="splash__acordeon-inner">
+                <div class="splash__acordeon-wrap">
+                    <a class="splash__acordeon-item" href="/page/pastas.html">
+                        <i class="ti ti-bowl-spoon"></i> Pastas
+                    </a>
+                    <a class="splash__acordeon-item" href="/page/congelados.html">
+                        <i class="ti ti-snowflake"></i> Congelados
+                    </a>
+                    <a class="splash__acordeon-item" href="/page/bebidas.html">
+                        <i class="ti ti-bottle"></i> Bebidas
+                    </a>
+                    <a class="splash__acordeon-item" href="/page/almacen.html">
+                        <i class="ti ti-shopping-cart"></i> Almacén
+                    </a>
                 </div>
-            </details>
+            </div>
 
 
             <!-- WHATSAPP -->
