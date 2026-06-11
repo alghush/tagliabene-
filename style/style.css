@@ -642,7 +642,7 @@ h1 {
 .productos {
     background-color: var(--color-fondo-productos);
     color: var(--color-blanco);
-    min-height:75vh;
+    min-height:30vh;
     display: flex;
     flex-direction: column;
     text-align: center;
