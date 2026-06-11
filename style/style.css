@@ -423,7 +423,7 @@ body {
     top: 100%;
     background-color: var(--color-traslucer);
     padding: 1.5rem;
-    min-width: 10rem;
+    min-width: 8rem;
     flex-direction: column;
     left: 50%;
     transform: translatex(-50%);
